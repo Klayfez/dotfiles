@@ -1,0 +1,103 @@
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    text-shadow: none;
+    font-family: 'FiraCode Nerd Font';
+}
+
+window#waybar {
+    background: rgba(21, 21, 32, 0.85);
+    font-size: 10pt;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid rgba(180, 190, 254, 0.5);
+    box-shadow: 0 0 8px rgba(180, 190, 254, 0.3);
+}
+
+#custom-trayicon,
+#custom-music,
+#tray,
+#workspaces,
+#pulseaudio,
+#network,
+#language,
+#clock {
+    padding: 4px 8px;
+    background: transparent;
+}
+
+#pulseaudio { color: #cba6f7; }
+#network { color: #f5c2e7; }
+#language { color: #89b4fa; }
+#clock { color: #bac0db; }
+#custom-music { 
+    color: #cba6f7;
+}
+#custom-trayicon { color: #89b4fa; }
+
+#pulseaudio.muted { color: #656b80; }
+#network.disconnected { color: #f38ba8; }
+
+#custom-spacer1,
+#custom-spacer2,
+#custom-spacer3 {
+    color: #656b80;
+    font-weight: bold;
+}
+
+#workspaces button {
+    color: #656b80;
+    background: transparent;
+    border: 1.5px solid transparent;
+    padding: 0 2px;
+    border-radius: 8px;
+    margin: 0px 2px;
+    transition: all 0.25s ease;
+}
+
+#workspaces button.active {
+    color: #b4befe;
+    border-color: #656b80;
+}
+
+tooltip {
+    background: rgba(21, 21, 32, 0.9);
+    border: 1px solid rgba(180, 190, 254, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    color: #89b4fa;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+
+tooltip label:first-child {
+    font-weight: bold;
+    color: #b4befe;
+}
+
+#tray menu {
+    border-radius: 4px;
+    background: rgba(21, 21, 32, 0.9);
+    border: 1px solid rgba(180, 190, 254, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    color: #89b4fa;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+#tray menuitem {
+    padding: 2px 4px;
+    margin: 4px 4px;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+}
+#tray menuitem:hover {
+    background: rgba(137, 180, 250, 0.15);
+    color: #b4befe;
+}
